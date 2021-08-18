@@ -1,0 +1,122 @@
+@()
+
+@main("Welcome to Play") {
+<header class="header-style bg-white" style=" height: 106px" id="header-section">
+    <div class="header-banner container nav-bar">
+        <div class="align-middle" style="padding: 20px 0; ">
+            <div class="row" >
+                <div class="col-md-3 logo">
+                    <a href="#header-section">
+                        <img src="@routes.Assets.versioned("images/icons/logo.png")" class="nav-logo">
+                    </a>
+                </div>
+                <div class="col-md-9 nav-menu">
+                    <div>
+                        <ul class="nav navbar justify-content-end">
+                            <li>
+                                <a class="inner-link text-dark" href="./">HOME</a>
+                            </li>
+                            <li>
+                                <a class="inner-link text-dark" href="./#content-section2">WHY SCALA</a>
+                            </li>
+                            <li>
+                                <a class="inner-link text-dark" href="./#content-section3">COMPANY</a>
+                            </li>
+                            <li>
+                                <a class="dropbtn dropdown-toggle inner-link text-dark" data-toggle="dropdown"
+                                   href="./#services-section" id="btn-services">SERVICES</a>
+                                <div class="dropdown-menu dropdown-content" aria-labelledby="defaultDropdown">
+                                    <a href="./web.html" class="dropdown-item">WEB DEVELOPMENT</a>
+                                    <a href="./SAAS.html" class="dropdown-item">SAAS/PAAS DEVELOPMENT</a>
+                                    <a href="./mobile.html" class="dropdown-item">MOBILE DEVELOPMENT</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="inner-link text-dark" href="./#about-section">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html"
+                                   class="inner-link btn btn-small propClone bg-danger text-white border-radius-0 sm-padding-nav-btn sm-display-inline-block"
+                                   style="padding: 3px 17px">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="slider-style">
+    <section class="slider-section container">
+        <div class="slider-items">
+            <div class="slider-item active">
+                <img src="@routes.Assets.versioned("images/bg-images/spa-slider-01.jpg")">
+                <img src="@routes.Assets.versioned("images/bg-images/spa-slider-02.jpg")">
+
+            </div>
+            <div class="slider-item">
+
+            </div>
+        </div>
+        <div class="slider-controller">
+            <div class="slider-pagination">
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+            <div class="slider-navigation">
+                <div class="slider-prev"></div>
+                <div class="slider-next"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="" id="content-section2">
+
+</div>
+<div class="" id="content-section3">
+
+</div>
+<div class="" id="services-section">
+    <div class="title-section">
+
+    </div>
+    <div class="">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+<div class="" id="technical-section">
+    <div class="title-section">
+
+    </div>
+    <div class="features">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<div class="" id="about-section">
+
+</div>
+<footer class="footer-style" id="footer-section">
+    <div>
+
+    </div>
+</footer>
+
+
+<script src="@routes.Assets.versioned("javascripts/index.js")"></script>
+}
