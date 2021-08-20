@@ -56,58 +56,105 @@ ul, ol{ margin: 0px; }
 }
 
 .html-overflow { overflow: hidden;}
-
-.navbar {padding: 20px 0 20px; z-index: 999; width: 100%; border-radius: 0; border: 0;}
-.navbar img {max-height:60px}
-.navbar li {margin:13px 20px;}
-.navbar li:last-child { margin-right: 0;}
-.navbar li a {font-size: 12px; padding: 0;cursor: pointer !important; border-bottom: 1px solid transparent; }
-.navbar li a:hover {opacity: 0.8;}
-.navbar li a.active, .navbar li.active > a, .nav .open>a, .nav .open>a:hover {opacity: 0.8; }
-.nav .open>a:focus, .dropdown-menu>li>a:focus, .nav .open>a { background-color: transparent !important}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover { border-color: transparent;}
-.navbar .nav-button { margin: 10px 0 8px 30px;}
-.navbar .nav-button i {margin-right:5px}
-.navbar .nav-button a { padding: 3px 17px 2px !important; border: 1px solid transparent; font-size: 10px}
-.navbar-collapse { padding: 0;}
-header .container { position: relative;}
-header .row { align-items: center; display: flex; height: auto;}
-.header-margin-top { margin-top: 86px; }
-.navbar.shrink-nav { position: fixed !important; top: 0; }
-.navbar.shrink-nav.shrink { padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,0.1) }
-.header-margin-top-big { margin-top: 134px; }
-.header-margin-top-medium { margin-top: 138px; }
-.navbar.shrink-nav.shrink .header-bottom { padding: 11px 0;}
+.content-padding{
+    padding: 80px 0;
+}
 
 /* ===================================
     Header
 ====================================== */
 
 .header-banner{
-
 }
 .nav-logo{
     max-height: 60px;
 }
+.navbar{
+    padding: 20px 0 20px;
+    z-index: 999;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+.navbar li {
+    margin:13px 20px;
+}
+.navbar li:last-child {
+    margin-right: 0;
+}
+.navbar li a {
+    font-size: 12px;
+    padding: 0;
+    cursor: pointer !important;
+    border-bottom: 1px solid transparent;
+}
+.navbar li a:hover {
+    opacity: 0.8;
+}
+.navbar li a.active, .navbar li.active > a, .nav .open>a, .nav .open>a:hover {
+    opacity: 0.8;
+}
 .inner-link{
     text-decoration:none;
 }
-.dropdown-content {
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #fff;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-.dropdown-content a {
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
     color: black;
     padding: 12px 16px !important;
     text-decoration: none;
     display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #fff;}
+  }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #fff;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition-delay: 2s;
+    transition-timing-function: ease-out;
+  }
+
+
+/* ===================================
+    Slide
+====================================== */
+
+.carousel-item{
+    height: 450px;
+}
+.slider-content{
+    top: 20%;
+}
+.slider-content h1{
+    margin-bottom: 70px;
+    color: #f3605c;
+    font-weight: 600;
+    font-size: 80px;
+}
+.slider-content p{
+    font-size: 20px;
+}
+
+/* ===================================
+
+====================================== */
+
+
