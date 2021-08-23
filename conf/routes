@@ -5,8 +5,11 @@
 
 # index page
 GET     /contact.html                                   controllers.HomeController.toContactPage
-
-
+GET     /web.html                                       controllers.HomeController.toWebPage
+GET     /SAAS.html                                      controllers.HomeController.toSAAS
+GET     /mobile.html                                    controllers.HomeController.toMobilePage
+# contact page
+POST    /sendMessage                                    controllers.HomeController.sendMessage
 # An example controller showing a sample home page
 GET     /                                               controllers.HomeController.index()
 

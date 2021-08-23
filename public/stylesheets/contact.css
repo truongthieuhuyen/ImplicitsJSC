@@ -60,6 +60,7 @@ ul, ol{ margin: 0px; }
     padding: 80px 0;
 }
 
+
 /* ===================================
     Header
 ====================================== */
@@ -96,9 +97,8 @@ ul, ol{ margin: 0px; }
 }
 .inner-link{
     text-decoration:none;
-}
 
-  /* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -128,36 +128,7 @@ ul, ol{ margin: 0px; }
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+    display: block;
     transition-delay: 2s;
     transition-timing-function: ease-out;
   }
-
-
-/* ===================================
-    Slide
-====================================== */
-
-.carousel-item{
-    height: 450px;
-}
-.slider-content{
-    top: 20%;
-}
-.slider-content h1{
-    margin-bottom: 70px;
-    color: #f3605c;
-    font-weight: 600;
-    font-size: 80px;
-}
-.slider-content p{
-    font-size: 20px;
-}
-
-/* ===================================
-    about-section
-====================================== */
-.map{
-    width: 100%;
-}
-
-

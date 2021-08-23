@@ -23,7 +23,21 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(views.html.index())
   }
 
-  def toContactPage() = Action {
+  def toWebPage() = Action{ implicit request: Request[AnyContent] =>
+    Ok(views.html.web())
+  }
+
+  def toSAAS() = Action{ implicit request: Request[AnyContent] =>
+    Ok(views.html.SAAS())
+  }
+
+  def toMobilePage() =Action{ implicit request: Request[AnyContent] =>
+    Ok(views.html.mobile())
+  }
+
+  def toContactPage() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.contact())
   }
+
+  def sendMessage() = TODO
 }
