@@ -8,6 +8,7 @@ GET     /contact.html                                   controllers.HomeControll
 GET     /web.html                                       controllers.HomeController.toWebPage
 GET     /SAAS.html                                      controllers.HomeController.toSAAS
 GET     /mobile.html                                    controllers.HomeController.toMobilePage
+GET     /company.html                                   controllers.HomeController.toCompanyPage
 # contact page
 POST    /sendMessage                                    controllers.HomeController.sendMessage
 # An example controller showing a sample home page

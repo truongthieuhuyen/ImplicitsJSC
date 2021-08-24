@@ -39,5 +39,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(views.html.contact())
   }
 
+  def toCompanyPage() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.company())
+  }
+
   def sendMessage() = TODO
 }
