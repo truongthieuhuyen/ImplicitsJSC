@@ -56,6 +56,7 @@ ul, ol{ margin: 0px; }
 }
 
 .html-overflow { overflow: hidden;}
+
 .content-padding{
     padding: 80px 0;
 }
@@ -151,13 +152,6 @@ ul, ol{ margin: 0px; }
 }
 .slider-content p{
     font-size: 20px;
-}
-
-/* ===================================
-    about-section
-====================================== */
-.map{
-    width: 100%;
 }
 
 

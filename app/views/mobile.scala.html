@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Implicits JSC - CONTACT</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/contact.css")">
+    <title>Implicits JSC - MOBILE DEVELOPMENT</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/index.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/icons/logo.png")">
 
 
@@ -37,7 +37,7 @@
                     <div>
                         <ul class="nav navbar justify-content-end">
                             <li>
-                                <a class="inner-link text-dark" href="./#header-section">HOME</a>
+                                <a class="inner-link text-dark" href="./#header-behind">HOME</a>
                             </li>
                             <li>
                                 <a class="inner-link text-dark" href="./#content-section2">WHY SCALA</a>
@@ -69,12 +69,31 @@
         </div>
     </div>
 </header>
+<div class="bg-light" id="header-behind" style="height:101px"></div>
+
+
+<!--/* ===================================-->
+<!-- Slide -->
+<!--====================================== */-->
+<div class="background" >
+    <div class="card bg-dark text-white" style="height: 450px">
+        <img src="@routes.Assets.versioned("images/bg-images/spa-slider-01.jpg")" class="card-img" alt="..." style="height: inherit">
+        <div class="card-img-overlay text-center top-50">
+            <h1 class="card-title">MOBILE DEVELOPMENT</h1>
+            <div class="mt-5">
+                <a href="#clients-section" class="nav-link d-inline-block overflow-hidden border border-2 border-dark rounded-circle">
+                    <i class="fas fa-angle-down fa-2x " style="height: 34px; width: 34px; color: black"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!--/* ===================================-->
 <!-- Main Content -->
 <!--====================================== */-->
-<div class="content-padding border-bottom" style="margin-top: 101px ">
+<div class="content-padding border-bottom" >
     <div class="container">
         <div class="title-section text-center mb-5 ">
             <div class="row">
@@ -231,7 +250,7 @@
         <div class="row text-center" style="height:80px;display: flex;align-items: center;">
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-start">
-                    <a href="#home" class="inner-link">
+                    <a href="#header-behind" class="nav-link inner-link">
                         <img style="max-height:80px;" data-img-size="(W)163px X (H)39px" src="@routes.Assets.versioned("images/icons/logo.png") ">
                     </a>
                 </div>
@@ -245,22 +264,22 @@
             </div>
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-end">
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-facebook-f" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-twitter" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-google-plus-g" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-pinterest" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-linkedin-in" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-youtube" style="color: black;"></i>
                     </a>
                 </div>
@@ -269,7 +288,7 @@
     </div>
 </footer>
 
-
+<script src="@routes.Assets.versioned("javascripts/main.js")"></script>
 <script src="@routes.Assets.versioned("javascripts/contact.js")"></script>
 </body>
 </html>

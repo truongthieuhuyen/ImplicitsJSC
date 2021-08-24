@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Implicits JSC - CONTACT</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/contact.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/index.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/icons/logo.png")">
 
 
@@ -37,7 +37,7 @@
                     <div>
                         <ul class="nav navbar justify-content-end">
                             <li>
-                                <a class="inner-link text-dark" href="./#header-section">HOME</a>
+                                <a class="inner-link text-dark" href="./#header-behind">HOME</a>
                             </li>
                             <li>
                                 <a class="inner-link text-dark" href="./#content-section2">WHY SCALA</a>
@@ -46,7 +46,7 @@
                                 <a class="inner-link text-dark" href="./#content-section3">COMPANY</a>
                             </li>
                             <li class="dropdown">
-                                <a class=" dropdown-toggle inner-link text-dark" data-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle inner-link text-dark" data-toggle="dropdown"
                                    href="./#services-section" id="btn-services">SERVICES</a>
                                 <div class="dropdown-menu dropdown-content" aria-labelledby="defaultDropdown">
                                     <a href="./web.html" class="dropdown-item">WEB DEVELOPMENT</a>
@@ -69,7 +69,11 @@
         </div>
     </div>
 </header>
+<div class="bg-light" id="header-behind" style="height:101px"></div>
 
+<!--/* ===================================-->
+<!-- Main Content -->
+<!--====================================== */-->
 <div class="content-padding" style="margin-top: 101px ">
     <div class="container">
         <div class="row align-items-center">
@@ -140,7 +144,7 @@
         <div class="row text-center" style="height:80px;display: flex;align-items: center;">
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-start">
-                    <a href="#home" class="inner-link">
+                    <a href="#header-behind" class="nav-link inner-link">
                         <img style="max-height:80px;" data-img-size="(W)163px X (H)39px" src="@routes.Assets.versioned("images/icons/logo.png") ">
                     </a>
                 </div>
@@ -154,22 +158,22 @@
             </div>
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-end">
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-facebook-f" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-twitter" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-google-plus-g" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-pinterest" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-linkedin-in" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-youtube" style="color: black;"></i>
                     </a>
                 </div>
@@ -180,5 +184,6 @@
 
 
 <script src="@routes.Assets.versioned("javascripts/contact.js")"></script>
+<script src="@routes.Assets.versioned("javascripts/main.js")"></script>
 </body>
 </html>

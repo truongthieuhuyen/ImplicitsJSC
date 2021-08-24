@@ -10,7 +10,7 @@
         <div class="align-middle py-3" >
             <div class="row align-items-center">
                 <div class="col-md-3 logo">
-                    <a href="./">
+                    <a href="./" class="nav-link inner-link">
                         <img src="@routes.Assets.versioned("images/icons/logo.png")" class="nav-logo">
                     </a>
                 </div>
@@ -18,17 +18,17 @@
                     <div>
                         <ul class="nav navbar justify-content-end">
                             <li>
-                                <a class="inner-link text-dark" href="./#header-section">HOME</a>
+                                <a class="nav-link inner-link text-dark" href="#header-behind">HOME</a>
                             </li>
                             <li>
-                                <a class="inner-link text-dark" href="./#content-section2">WHY SCALA</a>
+                                <a class="nav-link inner-link text-dark" href="#content-section2">WHY SCALA</a>
                             </li>
                             <li>
-                                <a class="inner-link text-dark" href="./#content-section3">COMPANY</a>
+                                <a class="nav-link inner-link text-dark" href="#content-section3">COMPANY</a>
                             </li>
                             <li class="dropdown">
-                                <a class=" dropdown-toggle inner-link text-dark" data-toggle="dropdown"
-                                   href="./#services-section" id="btn-services">SERVICES</a>
+                                <a class="nav-link dropdown-toggle inner-link text-dark" data-toggle="dropdown"
+                                   href="#services-section" id="btn-services">SERVICES</a>
                                 <div class="dropdown-menu dropdown-content" aria-labelledby="defaultDropdown">
                                     <a href="./web.html" class="dropdown-item">WEB DEVELOPMENT</a>
                                     <a href="./SAAS.html" class="dropdown-item">SAAS/PAAS DEVELOPMENT</a>
@@ -36,11 +36,11 @@
                                 </div>
                             </li>
                             <li>
-                                <a class="inner-link text-dark" href="./#about-section">ABOUT US</a>
+                                <a class="nav-link inner-link text-dark" href="#about-section">ABOUT US</a>
                             </li>
                             <li>
                                 <a href="./contact.html"
-                                   class="inner-link btn btn-small propClone bg-danger text-white border-radius-0 sm-padding-nav-btn sm-display-inline-block"
+                                   class="inner-link btn btn-small bg-danger text-white border-radius-0 sm-padding-nav-btn sm-display-inline-block"
                                    style="padding: 3px 17px">Contact</a>
                             </li>
                         </ul>
@@ -50,11 +50,13 @@
         </div>
     </div>
 </header>
+<div style="height: 101px" id="header-behind" class="bg-light"></div>
+
 
 <!--/* ===================================-->
 <!--Slide-->
 <!--====================================== */-->
-<div class="slider-style" style="margin-top: 101px">
+<div class="slider-style" >
     <section class="slider-section ">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -444,7 +446,7 @@
         <div class="row text-center" style="height:80px;display: flex;align-items: center;">
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-start">
-                    <a href="#home" class="inner-link">
+                    <a href="#header-behind" class="nav-link inner-link">
                         <img style="max-height:80px;" data-img-size="(W)163px X (H)39px" src="@routes.Assets.versioned("images/icons/logo.png") ">
                     </a>
                 </div>
@@ -458,22 +460,22 @@
             </div>
             <div class="col-md-3 d-table">
                 <div class="d-table-cell align-middle float-end">
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-facebook-f" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-twitter" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-google-plus-g" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-pinterest" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-linkedin-in" style="color: black;"></i>
                     </a>
-                    <a href="" class="me-3">
+                    <a href="" class="social-link inner-link me-3">
                         <i class="fab fa-youtube" style="color: black;"></i>
                     </a>
                 </div>
@@ -484,4 +486,5 @@
 
 
 <script src="@routes.Assets.versioned("javascripts/index.js")"></script>
+<script src="@routes.Assets.versioned("javascripts/main.js")"></script>
 }
