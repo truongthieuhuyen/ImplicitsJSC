@@ -1,0 +1,31 @@
+@* login Template File *@
+@(loginForm: Form[LoginData])(implicit request: MessagesRequestHeader, flash: Flash)
+
+@main("Login") {
+<!--<h2>Login</h2>-->
+<!--<form method="post" action="validateLogin">-->
+<!--    @helper.CSRF.formField-->
+<!--    <p>User name</p>-->
+<!--    <input type="text" name="username" id="username-login" style="margin-bottom: 12px">-->
+<!--    <br>-->
+<!--    <p>Password</p>-->
+<!--    <input type="password" name="password" id="password-login" style="margin-bottom: 12px">-->
+<!--    <br>-->
+<!--    <button type="submit">Submit</button>-->
+<!--</form>-->
+<!--<br>-->
+<h2 style="background-color: orange; padding: 15px">Login with Play form</h2>
+@helper.form(action = routes.TaskList.validateLoginForm){
+@helper.CSRF.formField
+@helper.inputText(loginForm("Username"))
+@helper.inputPassword(loginForm("Password"))
+<div class="form-action">
+    <button type="submit">Submit</button>
+</div>
+}
+<br>
+<div>
+    <h3 style="background-color: red">Register now!</h3>
+    <button><a href="#" style="text-decoration: none; margin: 5px;">Sign up</a></button>
+</div>
+}
