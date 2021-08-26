@@ -1,7 +1,7 @@
-@* login Template File *@
-@(loginForm: Form[LoginData])(implicit request: MessagesRequestHeader, flash: Flash)
+@* register Template File *@
+@(registerForm: Form[RegisterData])(implicit request: MessagesRequestHeader, flash: Flash)
 
-@main("Login") {
+@main("Register") {
 <!--/* ===================================-->
 <!--Header-->
 <!--====================================== */-->
@@ -18,13 +18,13 @@
                     <div>
                         <ul class="nav navbar justify-content-end">
                             <li>
-                                <a class="nav-link inner-link text-dark" href="./#header-behind">HOME</a>
+                                <a class="nav-link inner-link text-dark" href="#header-behind">HOME</a>
                             </li>
                             <li>
-                                <a class="nav-link inner-link text-dark" href="./#content-section2">WHY SCALA</a>
+                                <a class="nav-link inner-link text-dark" href="#content-section2">WHY SCALA</a>
                             </li>
                             <li>
-                                <a class="nav-link inner-link text-dark" href="./#content-section3">COMPANY</a>
+                                <a class="nav-link inner-link text-dark" href="#content-section3">COMPANY</a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle inner-link text-dark" data-toggle="dropdown"
@@ -63,20 +63,21 @@
 <!--/* ===================================-->
 <!--Form-->
 <!--====================================== */-->
-<h2 style="background-color: orange; padding: 15px" id="login-form">Login with Play form</h2>
-<p>username: admin</p>
-<p>password: password</p>
-@helper.form(action = routes.UserController.validateLoginForm){
+<h2 style="background-color: orange; padding: 15px" id="register-form">Sign up now with Play form</h2>
+
+
+@helper.form(action = routes.UserController.validateRegisterForm){
 @helper.CSRF.formField
-@helper.inputText(loginForm("username"))
-@helper.inputPassword(loginForm("password"))
+@helper.inputText(registerForm("Username"))
+@helper.inputPassword(registerForm("Password"))
 <div class="form-action">
     <button type="submit">Submit</button>
 </div>
 }
+
 <br>
 <div>
-    <h3 style="background-color: red; colo: white ">Register now!</h3>
-    <button><a href="@routes.UserController.register" style="text-decoration: none; margin: 5px;">Sign up</a></button>
+    <h3 style="background-color: red; color: white">Already have an account?</h3>
+    <button><a href="@routes.UserController.login" style="text-decoration: none; margin: 5px;">Login</a></button>
 </div>
 }

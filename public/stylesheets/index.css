@@ -76,11 +76,10 @@ ul, ol{ margin: 0px; }
     padding: 20px 0 20px;
     z-index: 999;
     width: 100%;
-    border-radius: 0;
-    border: 0;
+    margin-bottom: 0 !important;
 }
 .navbar li {
-    margin:13px 20px;
+    margin:13px 10px;
 }
 .navbar li:last-child {
     margin-right: 0;

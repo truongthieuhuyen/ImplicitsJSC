@@ -15,6 +15,9 @@ POST    /sendMessage                                    controllers.HomeControll
 GET     /                                               controllers.HomeController.index()
 GET     /login.html                                     controllers.UserController.login
 POST    /validateLoginForm                              controllers.UserController.validateLoginForm
-GET     /register                                       controllers.UserController.register
+GET     /register.html                                  controllers.UserController.register
+POST    /createUser                                     controllers.UserController.createUser
+POST    /validateRegisterForm                           controllers.UserController.validateRegisterForm
+GET     /logout                                         controllers.UserController.logout
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file                                   controllers.Assets.versioned(path="/public", file: Asset)

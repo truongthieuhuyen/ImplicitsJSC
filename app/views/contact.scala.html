@@ -9,6 +9,8 @@
 
     <!-- Boostrap CSS-->
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
@@ -18,6 +20,8 @@
     <!-- Boostrap JavaScript Bundle with Popper -->
     <script src="@routes.Assets.versioned("javascripts/bootstrap.js")" type="text/javascript"></script>
     <script src="@routes.Assets.versioned("javascripts/bootstrap.bundle.js")" type="text/javascript"></script>
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 
 </head>
 <body>
@@ -37,7 +41,7 @@
                     <div>
                         <ul class="nav navbar justify-content-end">
                             <li>
-                                <a class="inner-link text-dark" href="./#header-behind">HOME</a>
+                                <a class="nav-link inner-link text-dark" href="./#header-behind">HOME</a>
                             </li>
                             <li>
                                 <a class="inner-link text-dark" href="./#content-section2">WHY SCALA</a>
@@ -57,6 +61,15 @@
                             <li>
                                 <a class="inner-link text-dark" href="./#about-section">ABOUT US</a>
                             </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle inner-link text-dark" data-toggle="dropdown"
+                                   href="./" id="">ACCOUNT</a>
+                                <div class="dropdown-menu dropdown-content" aria-labelledby="defaultDropdown">
+                                    <a href="./login.html" class="dropdown-item">LOG IN</a>
+                                    <a href="./register.html" class="dropdown-item">REGISTER</a>
+                                    <a href="./" class="dropdown-item">LOG OUT</a>
+                                </div>
+                            </li>
                             <li>
                                 <a href="./contact.html"
                                    class="inner-link btn btn-small propClone bg-danger text-white border-radius-0 sm-padding-nav-btn sm-display-inline-block"
@@ -69,7 +82,7 @@
         </div>
     </div>
 </header>
-<div class="bg-light" id="header-behind" style="height:101px"></div>
+<div class="bg-light" id="header-behind" style="height:97px"></div>
 
 <!--/* ===================================-->
 <!-- Main Content -->
@@ -88,16 +101,16 @@
             <div class="col-md-6">
                 <form method="post" style="width: 90%" id="contact-form">
                     <div class="mb-3">
-                        <input type="text" class="form-control w-100" id="exampleInputName" aria-describedby="name" placeholder="* Your Namee">
+                        <input type="text" class="form-control w-100" id="exampleInputName" aria-describedby="name" placeholder="* Your Namee" required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control w-100" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="* Your Email">
+                        <input type="email" class="form-control w-100" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="* Your Email" required>
                         <div id="email" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <input type="password" class="form-control w-100" id="exampleInputPhone" placeholder="Your Phone">
                     </div>
-                    <textarea rows="6" id="message" class="form-control w-100 mb-3" placeholder="* Your Message" ></textarea>
+                    <textarea rows="6" id="message" class="form-control w-100 mb-3" placeholder="* Your Message" required></textarea>
                     <button type="submit" class="btn btn-danger text-white" id="submit">SEND MESSAGE</button>
                 </form>
             </div>
