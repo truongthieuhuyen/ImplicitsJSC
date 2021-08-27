@@ -17,7 +17,7 @@ object UserInMemory {
     }
   }
   def validateNewUser(username: String, password: String): Boolean ={
-    if (users.contains(username) || username.length().<(3) || username.length.>(16) || password.isEmpty) false
+    if (users.contains(username) || username.isEmpty || password.isEmpty) false
     else {
       users(username) = password
       true

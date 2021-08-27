@@ -14,12 +14,12 @@ case class RegisterData(username: String, password: String)
 @Singleton
 class UserController @Inject()(val cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
   val loginForm = Form(mapping(
-    "Username" -> text(3, 16),
+    "Username" -> text(5, 16),
     "Password" -> text(8)
   )(LoginData.apply)(LoginData.unapply))
 
   val registerForm = Form(mapping(
-    "Username" -> text(3, 16),
+    "Username" -> text(5, 16),
     "Password" -> text(8)
   )(RegisterData.apply)(RegisterData.unapply))
 
@@ -35,7 +35,7 @@ class UserController @Inject()(val cc: MessagesControllerComponents) extends Mes
           Redirect(routes.HomeController.index()).withSession("username" -> ld.username)
         }
         else {
-          Redirect(routes.UserController.login).flashing("error" -> "\n\n\n\n\n\n\n\n\n\n\n\n incorrect username/password")
+          Redirect(routes.UserController.login).flashing("error" -> "incorrect username/password")
         }
     )
   }
@@ -50,8 +50,8 @@ class UserController @Inject()(val cc: MessagesControllerComponents) extends Mes
   def createUser = Action { implicit request =>
     val postVals = request.body.asFormUrlEncoded
     postVals.map { args =>
-      val username = args("username").head
-      val password = args("password").head
+      val username = args("Username").head
+      val password = args("Password").head
       if (UserInMemory.createUser(username, password)) {
         Redirect(routes.HomeController.index).withSession("username" -> username)
       }
@@ -66,11 +66,10 @@ class UserController @Inject()(val cc: MessagesControllerComponents) extends Mes
       formRWithErrors => BadRequest(views.html.register(formRWithErrors)),
       rd =>
         if (UserInMemory.validateNewUser(rd.username, rd.password)) {
-          Redirect(routes.HomeController.index()).withSession("username" -> rd.username)
+          Redirect(routes.UserController.login).withSession("username" -> rd.username)
         }
         else {
-          Redirect(routes.UserController.register).flashing(
-            "error" -> "\n\n\n\n\n\n\n\n\n\n\n\n invalid username/password\n please input again")
+          Redirect(routes.UserController.register).flashing("error" -> "invalid username/password\n please input again")
         }
     )
   }
